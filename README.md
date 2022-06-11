@@ -4,7 +4,7 @@ A Minecraft Mod which attempts to add various now defunct quarry mods (Extra Uti
 I started playing a modpack, basically Better Minecraft crossed with Direpack and noticed that there was a lack of good quarry options 
 (FTB Industrial Contraptions quarry seems unrefiend for my testing in creative). 
 I've been playing modded minecraft for a very long time and my favourites have always been the BuldCraft Quarry and the Ender Quarry from Extra Utilties. 
-So, here they are!
+So here they are!
 # TODO:
 ### Quarries:
 -Ender Quarry (high)
