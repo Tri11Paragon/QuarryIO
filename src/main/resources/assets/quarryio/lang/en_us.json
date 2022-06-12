@@ -1,0 +1,6 @@
+{ 
+	"item.quarryio.woodgear": "Wooden Gear",
+	"item.quarryio.stonegear": "Stone Gear",
+	"block.quarryio.debug_quarry": "Debug Quarry",
+	"block.quarryio.marker": "Marker"
+}

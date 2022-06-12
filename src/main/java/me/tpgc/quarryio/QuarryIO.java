@@ -1,11 +1,12 @@
 package me.tpgc.quarryio;
 
-import java.util.stream.Collectors;
-
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
+import me.tpgc.quarryio.blocks.QuarryIOBlocks;
+import me.tpgc.quarryio.items.QuarryIOItems;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -14,11 +15,8 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(QuarryIO.MOD_ID)
@@ -27,9 +25,14 @@ public class QuarryIO {
 	public static final Logger LOGGER = LogUtils.getLogger();
 	public static final String MOD_ID = "quarryio";
 	
+	public static final CreativeModeTab MOD_TAB = CreativeModeTab.TAB_MISC;
+	
 	public QuarryIO() {
 		// Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        // register mod based registries
+        QuarryIOItems.register(FMLJavaModLoadingContext.get().getModEventBus());
+        QuarryIOBlocks.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

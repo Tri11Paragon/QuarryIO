@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "quarryio:block/debug_quarry" }
+  }
+}
