@@ -13,6 +13,9 @@ public class QuarryIOItems {
 	
 	public static final RegistryObject<Item> WOODEN_GEAR = ITEMS.register("woodgear", () -> new Item(new Item.Properties().tab(QuarryIO.MOD_TAB)));
 	public static final RegistryObject<Item> STONE_GEAR = ITEMS.register("stonegear", () -> new Item(new Item.Properties().tab(QuarryIO.MOD_TAB)));
+	public static final RegistryObject<Item> IRON_GEAR = ITEMS.register("irongear", () -> new Item(new Item.Properties().tab(QuarryIO.MOD_TAB)));
+	public static final RegistryObject<Item> GOLD_GEAR = ITEMS.register("goldgear", () -> new Item(new Item.Properties().tab(QuarryIO.MOD_TAB)));
+	public static final RegistryObject<Item> DIAMOND_GEAR = ITEMS.register("diamondgear", () -> new Item(new Item.Properties().tab(QuarryIO.MOD_TAB)));
 	
 	public static void register(IEventBus bus) {
 		ITEMS.register(bus);

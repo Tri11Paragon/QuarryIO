@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "WXW",
+    " W "
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:gears/stone"
+    },
+    "W": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "quarryio:irongear"
+  }
+}

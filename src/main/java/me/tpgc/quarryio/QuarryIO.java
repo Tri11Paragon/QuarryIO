@@ -5,8 +5,10 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
 import me.tpgc.quarryio.blocks.QuarryIOBlocks;
+import me.tpgc.quarryio.blocks.tile.QuarryIOBlockEntities;
 import me.tpgc.quarryio.items.QuarryIOItems;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -24,8 +26,16 @@ public class QuarryIO {
 	
 	public static final Logger LOGGER = LogUtils.getLogger();
 	public static final String MOD_ID = "quarryio";
+	public static final int MAX_MARKERS_LENGTH = 128;
+	public static final int MIN_MARKERS_LENGTH = 2;
 	
-	public static final CreativeModeTab MOD_TAB = CreativeModeTab.TAB_MISC;
+	public static final CreativeModeTab MOD_TAB = new CreativeModeTab("quarryio") {
+		@Override
+		public ItemStack makeIcon() {
+			// TODO Auto-generated method stub
+			return new ItemStack(QuarryIOItems.STONE_GEAR.get());
+		}
+	};
 	
 	public QuarryIO() {
 		// Register the setup method for modloading
@@ -33,6 +43,8 @@ public class QuarryIO {
         // register mod based registries
         QuarryIOItems.register(FMLJavaModLoadingContext.get().getModEventBus());
         QuarryIOBlocks.register(FMLJavaModLoadingContext.get().getModEventBus());
+        
+        QuarryIOBlockEntities.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

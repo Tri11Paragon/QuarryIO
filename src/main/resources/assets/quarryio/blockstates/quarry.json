@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "quarryio:block/quarry",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "quarryio:block/quarry"
+    },
+    "facing=south": {
+      "model": "quarryio:block/quarry",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "quarryio:block/quarry",
+      "y": 270
+    }
+  }
+}

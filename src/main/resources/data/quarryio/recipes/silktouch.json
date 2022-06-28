@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BEB",
+    "GUG",
+    "BEB"
+  ],
+  "key": {
+  	"U": {
+  		"item": "minecraft:ender_chest"
+  	},
+    "G": {
+      "tag": "forge:gears/diamond"
+    },
+    "B": { 
+    	"item": "minecraft:glowstone"
+    },
+    "E": { 
+    	"item": "minecraft:ender_pearl"
+    }
+  },
+  "result": {
+    "item": "quarryio:silktouch",
+    "count": 1
+  }
+}

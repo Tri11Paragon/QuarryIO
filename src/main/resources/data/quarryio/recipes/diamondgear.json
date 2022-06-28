@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "WXW",
+    " W "
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:gears/gold"
+    },
+    "W": {
+      "tag": "forge:gems/diamond"
+    }
+  },
+  "result": {
+    "item": "quarryio:diamondgear"
+  }
+}

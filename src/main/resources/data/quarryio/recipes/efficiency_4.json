@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BEB",
+    "GUG",
+    "BEB"
+  ],
+  "key": {
+  	"U": { 
+  		"item": "quarryio:efficiency_3"
+  	},
+    "G": {
+      "tag": "forge:gears/diamond"
+    },
+    "B": { 
+    	"item": "minecraft:redstone_block"
+    },
+    "E": { 
+    	"item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "item": "quarryio:efficiency_4",
+    "count": 1
+  }
+}

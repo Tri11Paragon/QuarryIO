@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "quarryio:block/silktouch",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "quarryio:block/silktouch"
+    },
+    "facing=south": {
+      "model": "quarryio:block/silktouch",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "quarryio:block/silktouch",
+      "y": 270
+    },
+    "facing=up": { 
+      "model": "quarryio:block/silktouch",
+      "x": 270
+    },
+    "facing=down": { 
+      "model": "quarryio:block/silktouch",
+      "x": 90
+    }
+  }
+}

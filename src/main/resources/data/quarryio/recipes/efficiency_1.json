@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BEB",
+    "GBG",
+    "BEB"
+  ],
+  "key": {
+    "G": {
+      "tag": "forge:gears/iron"
+    },
+    "B": { 
+    	"item": "minecraft:redstone_block"
+    },
+    "E": { 
+    	"item": "minecraft:ender_pearl"
+    }
+  },
+  "result": {
+    "item": "quarryio:efficiency_1",
+    "count": 1
+  }
+}

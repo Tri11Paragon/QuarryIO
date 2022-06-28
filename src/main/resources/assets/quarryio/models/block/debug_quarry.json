@@ -1,6 +1,8 @@
 {
-  "parent": "block/cube_all",
+  "parent": "minecraft:block/orientable",
   "textures": {
-    "all": "quarryio:block/debug_quarry"
-  }
+    "top": "quarryio:block/debug_quarry",
+  	"front": "quarryio:block/debug_quarry_front",
+  	"side": "quarryio:block/debug_quarry"
+   }
 }

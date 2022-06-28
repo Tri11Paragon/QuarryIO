@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "WXW",
+    " W "
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:gears/iron"
+    },
+    "W": {
+      "tag": "forge:ingots/gold"
+    }
+  },
+  "result": {
+    "item": "quarryio:goldgear"
+  }
+}

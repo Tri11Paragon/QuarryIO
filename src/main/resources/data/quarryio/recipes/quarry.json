@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IRI",
+    "EDE",
+    "DPD"
+  ],
+  "key": {
+    "D": {
+      "tag": "forge:gears/diamond"
+    },
+    "I": {
+        "tag": "forge:gears/iron"
+    },
+    "R": { 
+    	"tag": "forge:dusts/redstone"
+    },
+    "E": { 
+    	"item": "minecraft:ender_pearl"
+    },
+    "P": { 
+    	"item": "minecraft:diamond_pickaxe"
+    }
+  },
+  "result": {
+    "item": "quarryio:quarry",
+    "count": 1
+  }
+}

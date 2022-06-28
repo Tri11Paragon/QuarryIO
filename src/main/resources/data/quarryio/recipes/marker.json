@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
+    },
+    "X": [
+      {
+        "tag": "forge:gems/lapis"
+      }
+    ]
+  },
+  "result": {
+    "item": "quarryio:marker",
+    "count": 3
+  }
+}

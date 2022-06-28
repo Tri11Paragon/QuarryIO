@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "quarryio:debug_quarry",
+    "quarryio:quarry",
+    "quarryio:efficiency_1",
+    "quarryio:efficiency_2",
+    "quarryio:efficiency_3",
+    "quarryio:efficiency_4",
+    "quarryio:efficiency_5",
+    "quarryio:fortune_1",
+    "quarryio:fortune_2",
+    "quarryio:fortune_3",
+    "quarryio:silktouch"
+  ]
+}

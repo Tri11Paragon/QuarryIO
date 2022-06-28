@@ -1,6 +1,33 @@
 { 
 	"item.quarryio.woodgear": "Wooden Gear",
 	"item.quarryio.stonegear": "Stone Gear",
+	"item.quarryio.irongear": "Iron Gear",
+	"item.quarryio.goldgear": "Gold Gear",
+	"item.quarryio.diamondgear": "Diamond Gear",
+	
 	"block.quarryio.debug_quarry": "Debug Quarry",
-	"block.quarryio.marker": "Marker"
+	"block.quarryio.marker": "Marker",
+	"block.quarryio.quarry": "Quarry",
+	"block.quarryio.efficiency_1": "Efficiency 1 Upgrade",
+	"block.quarryio.efficiency_2": "Efficiency 2 Upgrade",
+	"block.quarryio.efficiency_3": "Efficiency 3 Upgrade",
+	"block.quarryio.efficiency_4": "Efficiency 4 Upgrade",
+	"block.quarryio.efficiency_5": "Efficiency 5 Upgrade",
+	"block.quarryio.silktouch": "Silk Touch Upgrade",
+	"block.quarryio.fortune_1": "Fortune 1 Upgrade",
+	"block.quarryio.fortune_2": "Fortune 2 Upgrade",
+	"block.quarryio.fortune_3": "Fortune 3 Upgrade",
+	
+	"itemGroup.quarryio": "QuarryIO",
+	
+	"tooltip.quarryio.debug_quarry.danger": "§7This Block can be dangerous.\nDo not place near objects you care about!",
+	"tooltip.quarryio.quarry.eff1": "§aQuarry mines 1 tick faster",
+	"tooltip.quarryio.quarry.eff2": "§aQuarry mines 2 ticks faster!",
+	"tooltip.quarryio.quarry.eff3": "§dQuarry mines every tick!",
+	"tooltip.quarryio.quarry.eff4": "§d§lQuarry mines twice a tick!",
+	"tooltip.quarryio.quarry.eff5": "§6§lQuarry mines 3 times a tick!",
+	"tooltip.quarryio.quarry.silk": "§6Quarry mines blocks using silk touch!",
+	"tooltip.quarryio.quarry.fortune1": "§dQuarry mines using fortune 1",
+	"tooltip.quarryio.quarry.fortune2": "§6Quarry mines using fortune 2",
+	"tooltip.quarryio.quarry.fortune3": "§6§lQuarry mines using fortune 3!"
 }

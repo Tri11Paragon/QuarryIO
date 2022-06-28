@@ -18,7 +18,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
-version = '0.1-1.18.1'
+version = '0.3.2-1.18.2'
 group = 'me.tpgc.quarryio' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'quarryio'
 
@@ -148,6 +148,12 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+    maven { // JEI
+        url "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven { // TOP
+        url "https://cursemaven.com"
+    }
 }
 
 dependencies {
@@ -155,6 +161,21 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.0'
+
+    //compileOnly fg.deof("mezz.jei:jei-${jei_version}:api")
+    //implementation fg.deof("mezz.jei:jei-${jei_version}")
+    // compile against the JEI API but do not include it at runtime
+    compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")  
+    // at runtime, use the full JEI jar
+    runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
+
+    implementation fg.deobf("curse.maven:the-one-probe-245211:3671753")
+
+    implementation fg.deobf("curse.maven:pipez-443900:3819249")
+
+    implementation fg.deobf("curse.maven:thermal-expansion-69163:3803489")
+    implementation fg.deobf("curse.maven:cofh-core-69162:3803484")
+    implementation fg.deobf("curse.maven:thermal-foundation-222880:3803495")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

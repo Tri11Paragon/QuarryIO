@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "WXW",
+    " W "
+  ],
+  "key": {
+    "W": {
+      "tag": "forge:cobblestone/normal"
+    },
+    "X": {
+      "tag": "forge:gears/wood"
+    }
+  },
+  "result": {
+    "item": "quarryio:stonegear"
+  }
+}

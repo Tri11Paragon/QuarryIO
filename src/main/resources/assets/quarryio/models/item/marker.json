@@ -1,3 +1,6 @@
 {
-  "parent": "quarryio:block/marker"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "quarryio:block/marker"
+  }
 }

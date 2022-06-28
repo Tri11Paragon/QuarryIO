@@ -3,6 +3,7 @@ package me.tpgc.quarryio.blocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
@@ -15,12 +16,18 @@ public class BlockMarker extends Block {
 	
 	public BlockMarker() {
 		super(BlockBehaviour.Properties.of(Material.METAL)
-				.requiresCorrectToolForDrops()
-				.strength(10f, 16f));
+				.strength(0.1f, 16f)
+				.lightLevel( (T) -> 10)
+			);
 	}
 
 	public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
 	      return AABB;
-	   }
+	}
+	
+	@Override
+	public RenderShape getRenderShape(BlockState pState) {
+		return RenderShape.MODEL;
+	}
 	
 }
